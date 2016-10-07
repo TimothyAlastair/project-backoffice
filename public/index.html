@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app="appModule">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project BackOffice</title>
+
+	<link rel="stylesheet" href="./assets/css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="./assets/css/main.css" type="text/css">
+
+	<script src="./assets/vendor/angular/angular.min.js"></script>
+	<script src="./assets/js/app.js"></script>
+</head>
+
+<body ng-controller="appController">
+	<div class="app-header">
+		<p>User: Janneke Mulder</p>
+	</div>
+	<div class="app-cases">
+		<ul ng-repeat="case in cases">
+			<li>{{ case.name }}</li>
+		<ul>
+	</div>
+
+	<div class="app-view">
+		<div ng-view></div>
+	</div>
+
+</body>
+</html>
