@@ -9,22 +9,39 @@
 	<link rel="stylesheet" href="./assets/css/main.css" type="text/css">
 
 	<script src="./assets/vendor/angular/angular.min.js"></script>
+	<script src="./assets/vendor/angular-route/angular-route.min.js"></script>
 	<script src="./assets/js/app.js"></script>
 </head>
-
 <body ng-controller="appController">
-	<div class="app-header">
-		<p>User: Janneke Mulder</p>
-	</div>
-	<div class="app-cases">
-		<ul ng-repeat="case in cases">
-			<li>{{ case.name }}</li>
-		<ul>
-	</div>
-
-	<div class="app-view">
-		<div ng-view></div>
-	</div>
-
+	<div class="app-body">
+		<div class="app-cases" ng-controller="caseController">
+			<div class="app-cases-options">
+				<p>Status: Open</p>
+			</div>
+			<ul>
+				<li ng-repeat="case in cases" class="app-case">
+					<h4>{{ case.name }}</h4>
+					<span>Status: {{ case.status }}</span>
+				</li>
+			</ul>
+		</div>
+		<div class="app-workspace">
+			<div class="app-header">
+				<p>User: Janneke Mulder</p>
+			</div>
+			<div class="app-view">
+				<div class="app-view-card">
+					<h1>Client</h1>
+					<p>Or Direction Balancing Ask Kid I Mother Always We've Everywhere Yourselves Sincerely Clearly What's Butterfly You've</p>
+				</div>
+				<div class="app-view-card">
+					<h1>Documenten</h1>
+				</div>
+				<div class="app-view-card">
+					<h1>Communicatie</h1>
+				</div>
+			</div>
+		</div>
+  </div>
 </body>
 </html>

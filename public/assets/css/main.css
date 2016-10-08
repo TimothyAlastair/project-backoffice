@@ -1,0 +1,50 @@
+.app-body {
+	display: flex;
+}
+
+.app-cases {
+	flex-basis: 300px;
+	height: 100vh;
+	background: #fff;
+	border-right: 1px solid #eee;
+}
+
+.app-cases .app-case {
+	padding: 25px;
+	border-bottom: 1px solid #eee;
+}
+
+.app-cases .app-cases-options {
+	padding: 25px;
+	border-bottom: 1px solid #eee;
+}
+
+.app-cases .app-case h4 {
+	margin: 0;
+}
+
+.app-workspace {
+	display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.app-workspace .app-header {
+	display: flex;
+  background: #aaa;
+}
+
+.app-workspace .app-view {
+	padding: 25px;
+	background: #f5f5f5;
+}
+
+.app-workspace .app-view-card {
+	padding: 25px;
+  background: #fff;
+  border: 1px solid #eee;
+}
+
+.app-workspace .app-view h1 {
+	margin: 0;
+}

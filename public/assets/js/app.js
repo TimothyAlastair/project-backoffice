@@ -1,6 +1,10 @@
 var app = angular.module('appModule',[]);
 
 app.controller('appController', function( $scope ) {
+	// Nuffin yet bro
+})
+
+app.controller('caseController', function( $scope ) {
 
 	$scope.cases = [
 		{
